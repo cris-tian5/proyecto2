@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos | 2D House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="inicio.html" class="logo"><img src="images/2d.png" alt="Logo"></a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="images/menu.png"  class="menu-icon" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="pedidos.html">Pedidos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <h1>Haz tu pedido</h1>
+            <p>Selecciona los productos que deseas y envía tu pedido por WhatsApp.</p>
+        </div>
+    </header>
+
+    <section class="pedido-whatsapp" style="text-align:center; margin:30px 0;">
+        <form id="form-pedidos" style="display:inline-block; text-align:left; max-width:400px;">
+            <div style="display:flex;align-items:flex-start;gap:15px;">
+                <div style="flex:1;">
+                    <h2>Bebidas calientes</h2>
+                    <ul style="list-style:none; padding-left:0;">
+                        <li style="font-weight:bold;">CAFES </li>
+                        <li><label><input type="checkbox" name="producto" value="Capuchino 15 bs"> Capuchino <span style='color:gray;'>15 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Cafe Americano 12 bs"> Cafe Americano <span style='color:gray;'>12 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Cafe Expresso 12 bs"> Cafe Expresso <span style='color:gray;'>12 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Cafe con leche 8 bs"> Cafe con leche <span style='color:gray;'>8 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Toddy con leche 8 bs"> Toddy con leche <span style='color:gray;'>8 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Toddy 6 bs"> Toddy <span style='color:gray;'>6 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Cafe 5 bs"> Cafe <span style='color:gray;'>5 bs</span></label></li>
+                    </ul>
+                    <ul style="list-style:none; padding-left:0;">
+                        <li style="font-weight:bold;">TÉS </li>
+                        <li><label><input type="checkbox" name="producto" value="Té 5 bs"> Té <span style='color:gray;'>5 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Mate de manzanilla 5 bs"> Mate de manzanilla <span style='color:gray;'>5 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Mate de coca 5 bs"> Mate de coca <span style='color:gray;'>5 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Mate de anis 5 bs"> Mate de anis <span style='color:gray;'>5 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Mate de boldo 5 bs"> Mate de boldo <span style='color:gray;'>5 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Mate de cedrón 5 bs"> Mate de cedrón <span style='color:gray;'>5 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Trimate 5 bs"> Trimate <span style='color:gray;'>5 bs</span></label></li>
+                    </ul>
+                </div>
+                <img src="images/c1.png" alt="Bebidas calientes" style="width:150px;max-width:40vw;object-fit:contain;">
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:15px;margin-top:25px;">
+                <div style="flex:1;">
+                    <h2>Bebidas frías</h2>
+                    <ul style="list-style:none; padding-left:0;">
+                        <li><label><input type="checkbox" name="producto" value="Crack de oreo 25 bs"> Crack de oreo <span style='color:gray;'>25 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Crack de frutilla 25 bs"> Crack de frutilla <span style='color:gray;'>25 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Frapuccino 20 bs"> Frapuccino <span style='color:gray;'>20 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Frappe de oreo 20 bs"> Frappe de oreo <span style='color:gray;'>20 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Frappe de frutilla 20 bs"> Frappe de frutilla <span style='color:gray;'>20 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Frappe de chocolate 20 bs"> Frappe de chocolate <span style='color:gray;'>20 bs</span></label></li>
+                    </ul>
+                </div>
+                <img src="images/frapes.png" alt="Bebidas frías" style="width:150px;max-width:40vw;object-fit:contain;">
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:15px;margin-top:25px;">
+                <div style="flex:1;">
+                    <h2>Licuados</h2>
+                    <p style="margin-bottom:5px;color:#555;font-size:0.95em;">Todos los licuados pueden ser con agua <b>(8 bs)</b> o leche <b>(10 bs)</b></p>
+                    <ul style="list-style:none; padding-left:0;">
+                        <li>
+                            <label><input type="checkbox" name="producto" value="Licuado de papaya con agua 8 bs"> Papaya <span style='color:gray;'>8 bs</span></label>
+                            <label><input type="checkbox" name="producto" value="Licuado de papaya con leche 10 bs"><span style='color:gray; margin-left:10px;'>10 bs</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="producto" value="Licuado de plátano con agua 8 bs"> Plátano <span style='color:gray;'>8 bs</span></label>
+                            <label><input type="checkbox" name="producto" value="Licuado de plátano con leche 10 bs"><span style='color:gray; margin-left:10px;'>10 bs</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="producto" value="Licuado de frutilla con agua 8 bs"> Frutilla <span style='color:gray;'>8 bs</span></label>
+                            <label><input type="checkbox" name="producto" value="Licuado de frutilla con leche 10 bs"><span style='color:gray; margin-left:10px;'>10 bs</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="producto" value="Licuado de durazno con agua 8 bs"> Durazno <span style='color:gray;'>8 bs</span></label>
+                            <label><input type="checkbox" name="producto" value="Licuado de durazno con leche 10 bs"><span style='color:gray; margin-left:10px;'>10 bs</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="producto" value="Licuado de manzana con agua 8 bs"> Manzana <span style='color:gray;'>8 bs</span></label>
+                            <label><input type="checkbox" name="producto" value="Licuado de manzana con leche 10 bs"><span style='color:gray; margin-left:10px;'>10 bs</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="producto" value="Licuado de mora con agua 8 bs"> Mora <span style='color:gray;'>8 bs</span></label>
+                            <label><input type="checkbox" name="producto" value="Licuado de mora con leche 10 bs"><span style='color:gray; margin-left:10px;'>10 bs</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="producto" value="Licuado de limón con agua 8 bs"> Limón <span style='color:gray;'>8 bs</span></label>
+                            <label><input type="checkbox" name="producto" value="Licuado de limón con leche 10 bs"><span style='color:gray; margin-left:10px;'>10 bs</span></label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="producto" value="Licuado de durazno con agua 8 bs"> Durazno <span style='color:gray;'>8 bs</span></label>
+                            <label><input type="checkbox" name="producto" value="Licuado de durazno con leche 10 bs"><span style='color:gray; margin-left:10px;'>10 bs</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <img src="images/jugos.png" alt="Licuados" style="width:200px;max-width:60vw;object-fit:contain;">
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:15px;margin-top:25px;">
+                <div style="flex:1;">
+                    <h2>Postres</h2>
+                    <ul style="list-style:none; padding-left:0;">
+                        <li><label><input type="checkbox" name="producto" value="Torta de chocolate 10 bs"> Torta de chocolate <span style='color:gray;'>10 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Torta Napolitana 10 bs"> Torta Napolitana <span style='color:gray;'>10 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Torta de Moka 10 bs"> Torta de Moka <span style='color:gray;'>10 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Torta Matilda 10 bs"> Torta Matilda <span style='color:gray;'>10 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Pie de limón 10 bs"> Pie de limón <span style='color:gray;'>10 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Quesillo venezolano 10 bs"> Quesillo venezolano <span style='color:gray;'>10 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Chocoflan 10 bs"> Chocoflan <span style='color:gray;'>10 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Rol de Canela 8 bs"> Rol de Canela <span style='color:gray;'>8 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Pie de Maracuya 7 bs"> Pie de Maracuya <span style='color:gray;'>7 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Minidona 2 bs"> Minidona <span style='color:gray;'>2 bs</span></label></li>
+                    </ul>
+                </div>
+                <img src="images/torta.png" alt="Postres" style="width:150px;max-width:40vw;object-fit:contain;">
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:15px;margin-top:25px;">
+                <div style="flex:1;">
+                    <h2>Tostadas y Crepas</h2>
+                    <ul style="list-style:none; padding-left:0;">
+                        <li style="font-weight:bold;">TOSTADA </li>
+                        <li><label><input type="checkbox" name="producto" value="Panini de pepperoni y queso 18 bs"> Panini de pepperoni y queso <span style='color:gray;'>18 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Panini de jamon y queso 15 bs"> Panini de jamon y queso <span style='color:gray;'>15 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Tocino y revuelto de huevo 10 bs"> Tocino y revuelto de huevo <span style='color:gray;'>10 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Revuelto de huevo y mortadela 8 bs"> Revuelto de huevo y mortadela <span style='color:gray;'>8 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Jamon y queso 7 bs"> Jamon y queso <span style='color:gray;'>7 bs</span></label></li>
+                    </ul>
+                    <ul style="list-style:none; padding-left:0;">
+                        <li style="font-weight:bold;">CREPAS </li>
+                        <li><label><input type="checkbox" name="producto" value="Hawaiana 17 bs"> Hawaiana <span style='color:gray;'>17 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Crepizza 16 bs"> Crepizza <span style='color:gray;'>16 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Ucrania 17 bs"> Ucrania <span style='color:gray;'>17 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Princesa 16 bs"> Princesa <span style='color:gray;'>16 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Golosa 18 bs"> Golosa <span style='color:gray;'>18 bs</span></label></li>
+                        <li><label><input type="checkbox" name="producto" value="Crepaleta 8 bs"> Crepaleta <span style='color:gray;'>8 bs</span></label></li>
+                    </ul>
+                </div>
+                <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+                    <img src="images/panini.png" alt="Tostadas" style="width:150px;max-width:40vw;object-fit:contain;">
+                    <img src="images/crepas.png" alt="Crepas" style="width:150px;max-width:40vw;object-fit:contain;">
+                </div>
+            </div>
+            <button type="button" class="btn-1" style="margin-top:20px; width:100%;" onclick="enviarWhatsAppPedido()">Enviar pedido por WhatsApp</button>
+        </form>
+        <script>
+        function enviarWhatsAppPedido() {
+            var seleccionados = Array.from(document.querySelectorAll('#form-pedidos input[name=producto]:checked')).map(cb => cb.value);
+            if(seleccionados.length === 0) {
+                alert('Selecciona al menos un producto.');
+                return;
+            }
+            var mensaje = 'Hola, quiero pedir: ' + seleccionados.join(', ');
+            var url = 'https://api.whatsapp.com/send?phone=59172425814&text=' + encodeURIComponent(mensaje);
+            window.open(url, '_blank');
+        }
+        </script>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Redes</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="mailto:info@2dhouse.com">Correo</a></li>
+                    <li><a href="tel:+59172425814">Teléfono</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
